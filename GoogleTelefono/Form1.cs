@@ -233,18 +233,29 @@ namespace GoogleTelefono
                 ticket.AddTitle("Recibo");
                 ticket.AddCreator("Phone2Go");
                 ticket.Open();
-              //  ticket.Add(new Paragraph(lblnombretel.Text + " Bateria " + label12.Text + " Cantidad " + metroLabel1.Text + " Pantallas " + txtMem.Text + " Camaras " + txtAcce.Text + " Precio " + lblprice.Text));
+                ticket.Add(new Paragraph(lblnombretel.Text +
+                    " Camara " + lblpreciocamaras.Text +
+                    " Cantidad " + cantidadcamaras.Value +
+                    " Precio " + lblpreciocamaras.Text +
+                    " Descripcion " + lbldescripcioncamara +
+                    " Memoria " + lblpreciomemorias.Text +
+                    " Cantidad " + cantidadmemorias.Value +
+                    " Precio:  " + lblpreciomemorias.Text + "\n" +
+                    " Descripcion " + lbldescripcion.Text +
+                    " Pantalla Precio: " + lblpreciopantalla.Text +
+                    " Precio: " + lblprecio.Text));
+
                 wri.CloseStream = false;
                 ticket.Close();
                 memoryStream.Position = 0;
               
                 //
 
-                MailMessage mail = new MailMessage("[tu correo]", txtcorreo.Text, "Ticket de compra","Recibo");
+                MailMessage mail = new MailMessage("orlandosanch3z@gmail.com", txtcorreo.Text, "Ticket de compra","Recibo");
                 mail.Attachments.Add(new Attachment(memoryStream, "Recibo.pdf"));
                 SmtpClient client = new SmtpClient("smtp.gmail.com");
                 client.Port = 587;
-                client.Credentials = new System.Net.NetworkCredential("[tu correo]", "[tu contrasena]");
+                client.Credentials = new System.Net.NetworkCredential("orlandosanch3z@gmail.com", "bejeweled2012");
                 client.EnableSsl = true;
                 client.Send(mail);
                 //      string query = string.Format("insert into Ventas (Telefono,Precio,Correo,Fecha) values('{0}','{1}','{2}','{3}')", lblspecs.Text += lblstorage.Text += lblacc.Text, lblprecio.Text, txtemail.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm"));
