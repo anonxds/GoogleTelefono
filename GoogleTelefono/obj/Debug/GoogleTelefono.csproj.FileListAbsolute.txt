@@ -1,0 +1,16 @@
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\bin\Debug\GoogleTelefono.exe.config
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\bin\Debug\GoogleTelefono.exe
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\bin\Debug\GoogleTelefono.pdb
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\bin\Debug\itextsharp.dll
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\bin\Debug\System.Data.SQLite.dll
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\bin\Debug\itextsharp.xml
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\bin\Debug\System.Data.SQLite.xml
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.Form1.resources
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.Inventario.resources
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.Properties.Resources.resources
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.csproj.GenerateResource.cache
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.csproj.CoreCompileInputs.cache
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.csproj.CopyComplete
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.exe
+C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.pdb
