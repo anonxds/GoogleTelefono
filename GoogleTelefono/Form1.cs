@@ -251,11 +251,11 @@ namespace GoogleTelefono
               
                 //
 
-                MailMessage mail = new MailMessage("orlandosanch3z@gmail.com", txtcorreo.Text, "Ticket de compra","Recibo");
+                MailMessage mail = new MailMessage("[tu correo]", txtcorreo.Text, "Ticket de compra","Recibo");
                 mail.Attachments.Add(new Attachment(memoryStream, "Recibo.pdf"));
                 SmtpClient client = new SmtpClient("smtp.gmail.com");
                 client.Port = 587;
-                client.Credentials = new System.Net.NetworkCredential("orlandosanch3z@gmail.com", "bejeweled2012");
+                client.Credentials = new System.Net.NetworkCredential("[tu correo]", "[contrasena]");
                 client.EnableSsl = true;
                 client.Send(mail);
                 //      string query = string.Format("insert into Ventas (Telefono,Precio,Correo,Fecha) values('{0}','{1}','{2}','{3}')", lblspecs.Text += lblstorage.Text += lblacc.Text, lblprecio.Text, txtemail.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm"));

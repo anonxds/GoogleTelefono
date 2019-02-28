@@ -25,11 +25,11 @@ namespace GoogleTelefono.Observer
 
         public override void Update(TextBox text)
         {
-            MailMessage mail = new MailMessage("[correo]", _correo, "[titulo]", "[subtitulo]");
+            MailMessage mail = new MailMessage("orlandosanch3z@gmail.com", _correo, "[titulo]", "[subtitulo]");
             mail.Body = text.Text;
             SmtpClient client = new SmtpClient("smtp.gmail.com");
             client.Port = 587;
-            client.Credentials = new System.Net.NetworkCredential("[correo]", "[contrasena]");
+            client.Credentials = new System.Net.NetworkCredential("orlandosanch3z@gmail.com", "bejeweled2012");
             client.EnableSsl = true;
             client.Send(mail);
 
