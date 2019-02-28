@@ -17,8 +17,14 @@ namespace GoogleTelefono.Observer
         }
         public void Deataach(int i)
         {
-            _observers.RemoveAt(i);
-
+            try
+            {
+                _observers.RemoveAt(i);
+            }
+            catch
+            {
+                MessageBox.Show("No hay usuarios por quitar");
+            }
         }
         public void Notifica(TextBox s)
         {

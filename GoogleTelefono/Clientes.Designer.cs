@@ -105,7 +105,7 @@
             // 
             this.cbusuarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbusuarios.FormattingEnabled = true;
-            this.cbusuarios.Location = new System.Drawing.Point(344, 29);
+            this.cbusuarios.Location = new System.Drawing.Point(211, 45);
             this.cbusuarios.Name = "cbusuarios";
             this.cbusuarios.Size = new System.Drawing.Size(121, 21);
             this.cbusuarios.TabIndex = 7;
@@ -113,7 +113,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(341, 13);
+            this.label3.Location = new System.Drawing.Point(208, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 8;
@@ -121,7 +121,7 @@
             // 
             // btnquitar
             // 
-            this.btnquitar.Location = new System.Drawing.Point(344, 62);
+            this.btnquitar.Location = new System.Drawing.Point(211, 78);
             this.btnquitar.Name = "btnquitar";
             this.btnquitar.Size = new System.Drawing.Size(75, 23);
             this.btnquitar.TabIndex = 9;
@@ -133,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 262);
+            this.ClientSize = new System.Drawing.Size(387, 262);
             this.Controls.Add(this.btnquitar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbusuarios);

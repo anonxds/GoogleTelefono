@@ -14,5 +14,4 @@ C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleT
 C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.csproj.CopyComplete
 C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.exe
 C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.pdb
-C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.csprojAssemblyReference.cache
 C:\Users\Reborn 3.0\source\repos\GoogleTelefono\GoogleTelefono\obj\Debug\GoogleTelefono.Clientes.resources

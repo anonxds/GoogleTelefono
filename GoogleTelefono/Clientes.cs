@@ -50,13 +50,19 @@ namespace GoogleTelefono
 
         private void btnquitar_Click(object sender, EventArgs e)
         {
-       //     string query = string.Format("delete from Subcritores where Nombre = '{0}'", comboBox1.Text);
-         //   sq.Exe(query);
-            s.Deataach(cbusuarios.SelectedIndex);
-            s.Estado = txtcorreo.Text;
-            cbusuarios.Items.RemoveAt(cbusuarios.SelectedIndex);
-            btnquitar.Enabled = false;
-           
+            //     string query = string.Format("delete from Subcritores where Nombre = '{0}'", comboBox1.Text);
+            //   sq.Exe(query);
+            try
+            {    
+                s.Deataach(cbusuarios.SelectedIndex);
+                s.Estado = txtcorreo.Text;
+                cbusuarios.Items.RemoveAt(cbusuarios.SelectedIndex);
+                btnquitar.Enabled = false;
+            }
+            catch
+            {
+                MessageBox.Show("No hay usuarios por quitar");
+            }
         }
 
         private void txtofertas_TextChanged(object sender, EventArgs e)

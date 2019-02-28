@@ -227,6 +227,7 @@ namespace GoogleTelefono
         {
             try
             {
+                //creamos un archivo pdf para depositar nuestros datos
                 Document ticket = new Document(PageSize.A4, 10f, 10f, 10f, 0f);
                 MemoryStream memoryStream = new MemoryStream();
               PdfWriter wri = PdfWriter.GetInstance(ticket, memoryStream);
@@ -237,22 +238,24 @@ namespace GoogleTelefono
                     " Camara " + lblpreciocamaras.Text +
                     " Cantidad " + cantidadcamaras.Value +
                     " Precio " + lblpreciocamaras.Text +
-                    " Descripcion " + lbldescripcioncamara +
+                    " Descripcion " + lbldescripcioncamara + 
                     " Memoria " + lblpreciomemorias.Text +
                     " Cantidad " + cantidadmemorias.Value +
                     " Precio:  " + lblpreciomemorias.Text + "\n" +
                     " Descripcion " + lbldescripcion.Text +
                     " Pantalla Precio: " + lblpreciopantalla.Text +
                     " Precio: " + lblprecio.Text));
-
+                //requiere un poco de acomodo en el pdf
                 wri.CloseStream = false;
                 ticket.Close();
                 memoryStream.Position = 0;
               
-                //
+
+                //aqui se termina la creacion del archivo
+                // metodo de crear el correo
 
                 MailMessage mail = new MailMessage("[tu correo]", txtcorreo.Text, "Ticket de compra","Recibo");
-                mail.Attachments.Add(new Attachment(memoryStream, "Recibo.pdf"));
+                mail.Attachments.Add(new Attachment(memoryStream, "Recibo.pdf")); //agregamos el archivo al correo
                 SmtpClient client = new SmtpClient("smtp.gmail.com");
                 client.Port = 587;
                 client.Credentials = new System.Net.NetworkCredential("[tu correo]", "[contrasena]");
@@ -262,6 +265,8 @@ namespace GoogleTelefono
                 //     s.Exe(query);
 
                 MessageBox.Show("Mensaje enviado");
+
+                //aqui termina el metodo de crear el metodo
 
             }
             catch
